@@ -1,5 +1,5 @@
 #LABORATORIO_1
-#NOMBRES: CATALINA LEDESMA Y DENISSE TORRES
+#NOMBRES: CATALINA LEDESMA 
 
 #DESAFIO 1
 print("---------------------------------------------")
@@ -50,18 +50,19 @@ def descifrar(cadena,llave):
 
 #CIFRADO
     
-print("Cifrado en Rot(8)")
-primer_paso = Rot("HolaMundo",8)
-print(Rot("HolaMundo",8))
+print("Cifrado en Rot(15)")
+primer_paso = Rot("HolaMundo",15)
+print(Rot("HolaMundo",15))
 print("")
 print ("Cifrado en Vigenere")
 linea = str(primer_paso).lower()
-clave = "heropassword"
+clave = "cvqnoteshrwnszhhksorbqcoas"
 segundo_paso = cifrar(linea,clave)
 print (cifrar(linea,clave))
 print("")
-print("Cifrado en Rot(12)")
-print(Rot(segundo_paso,12))
+print("Cifrado en Rot(7)")
+print(Rot(segundo_paso,7))
+
 
 #DESAFIO 2
 
@@ -70,20 +71,18 @@ print("Desafio 2\n")
 
 #DESCIFRADO
 
-print("Descifrado en Rot -12")
-primero = Rot("DuaqQbOzYukrcqgEnwdqjl",-12)
-print(Rot("DuaqQbOzYukrcqgEnwdqjl",-12))
+print("Descifrado en Rot -7")
+primero = Rot("oemkd lyzqgvqxgptuuinqy nrkkfmnv",-7)
+print(Rot("oemkdlyzqgvqxgptuuinqynrkkfmn",-7))
 print("")
 print ("Descifrado en Vigenere")
 line = str(primero).lower()
-llave = "finispasswd"
+llave = "aobkqolrzsrigpknkufezioer"
 segundo = descifrar(line,llave)
 print (descifrar(line,llave))
 print("")
-print("Descifrado en rot -8")
-print(Rot(segundo,-8))
+print("Descifrado en rot -15")
+print(Rot(segundo,-15))
 print("---------------------------------------------")
-
-
 
 
